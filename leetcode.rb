@@ -147,10 +147,6 @@ puts find_ways("12")
 #     s consists of only English letters and spaces ' '.
 
 def length_of_last_word(s)
-    if s.empty? || s.strip.empty?
-        return 0
-    end
-    array = s.split(" ")
-    return array.last.length ? array.last.length : 0
+    s.strip.empty? ? 0 : s.split(" ").last.length
 end
 
